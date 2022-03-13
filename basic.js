@@ -1,10 +1,12 @@
+"use strict";
 var Role;
 (function (Role) {
     Role[Role["Admin"] = 0] = "Admin";
     Role[Role["Author"] = 1] = "Author";
     Role[Role["Father"] = 2] = "Father";
-})(Role || (Role = {})); // using enum
-var person 
+})(Role || (Role = {})); // using enum 0 is admin and soon can make 
+// make admin = 1 and others increments too otherwise admin is 0. 
+const person 
 // : {
 //   name: string;
 //   age: number;
@@ -15,7 +17,7 @@ var person
     name: 'kesh',
     age: 30,
     hobby: ['cook', 'play'],
-    role: Role.Admin //[1,'father']
+    role: Role.Admin // equals to [0,'Admin']
 };
 // console.log(person.hobby)
 // for ( const hobbies of person.hobby){
